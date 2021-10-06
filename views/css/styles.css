@@ -1,0 +1,391 @@
+@font-face {
+    font-family: 'bebas';
+    src: url('./fonts/BebasNeue-Regular.ttf');
+}
+*{
+    margin:0em;
+    padding: 0em;
+}
+body{
+    background-image: url('./img/background.png');
+    background-size: 18em;
+    padding-bottom: 2.5em;
+}
+
+header{
+    background-color: #21abab;
+    color: white;
+}
+.navbar{
+    font-family: 'bebas';
+    letter-spacing: 0.1em;
+    font-size: 1em;
+}
+.carousel{
+    overflow: hidden;
+}
+.navbar > a{
+    font-size: 1.8em;
+}
+
+.table th{
+    color: white;
+}
+
+.table .thead,
+.table .thVacunas{
+    background-color: #1e9494;
+}
+
+footer{
+    /*Siempre abajo*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /**************/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #21abab;
+    height: 2.5em;
+}
+footer p{
+    font-weight: bold;
+    color: white;
+}
+
+.title{
+    color: #21abab;
+    background-color: white;
+    font-weight: bold;
+}
+
+.colorCelda{
+    background-color: #647c90;
+}
+.estadisticas{
+    font-size: 2em;
+}
+/* .colorCelda-1{
+    background-color: #0287bf;
+}
+.colorCelda-35{
+    background-color: #4a81a8;
+}
+.colorCelda-36{
+    background-color: #647c90;
+}
+.colorCelda-37{
+    background-color: #74777a;
+}
+.colorCelda-38{
+    background-color: #696c6e;
+}
+.colorCelda-39{
+    background-color: #7f7163;
+}
+.colorCelda-40{
+    background-color: #7f6546;
+}
+.colorCelda-41{
+    background-color: #866c4c;;
+}
+.colorCelda-42{
+    background-color: #775e3f;
+}
+.colorCelda-43{
+    background-color: #705839;
+} */
+.asistemico{
+    opacity: 0.5;
+}
+.celdaAsistemico{
+    background-color: white;
+}
+.celda{
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+.celda_admin{
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+.celda_admin p,
+.celda p{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_celda_admin{
+    position: absolute;
+    top: -200;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 2em;
+    height: 2em;
+    border-radius: 5em;
+    border:none;
+    background-color: #21abab;
+    opacity: 0.5;
+}
+.celda_admin:hover{
+    background-color: gray;
+    opacity: 1;
+    transition: all 500ms;
+}
+.celda_admin:hover p{
+    opacity:0;
+    transition: all 500ms;
+}
+.celda_admin:hover .btn_celda_admin{
+    animation: aparicion 500ms forwards;
+}
+
+@keyframes aparicion {
+    to{
+        top: 0;
+    }
+}
+.btn-registro{
+	position: relative;
+	display: block;
+	overflow: hidden;
+	color:white;
+	transition: all ease 0.5s;
+    border: 0.1em solid white;
+}
+ 
+.btn-registro:after,
+.btn-registro:before{
+	width: 80px;
+	height: 200px;
+	content: '';
+	display: block;
+	transform: rotate(45deg);
+	top: -60px;
+	position: absolute;
+	transition: none;
+	right:-45%;
+}
+ 
+.btn-registro:before{
+	left: -48%;
+}
+ 
+.btn-registro:hover{
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	background:#12C987;
+    color: white;
+}
+ 
+.btn-registro:hover:after,
+.btn-registro:hover:before{
+	transform: rotate(45deg), scaleX(130%);
+	background: rgba(255,255,255,0.1);
+	transition: all ease 0.5s;
+}
+ 
+.btn-registro:hover:after{
+	right: 130%;
+}
+ 
+.btn-registro:hover:before{
+	left: 130%;
+}
+
+.btn-salir:hover{
+    background-color: #ff4040;
+}
+
+.caja_busqueda{
+    width: 20em;
+}
+.texto_busqueda{
+    height: 2em;
+    width: 15em;
+    border: 0.1em solid #0287bf;
+    border-top-left-radius: 5em;
+    border-bottom-left-radius: 5em;
+    outline: none;
+    padding: 1em;
+}
+.input_vacuna{
+    height: 2em;
+    width: 15em;
+    border: 0.1em solid #0287bf;
+    border-radius: 5em;
+    outline: none;
+    padding: 1em;
+}
+.btn-vacuna{
+    height: 2em;
+}
+.where_busqueda{
+    height: 2.1em;
+    width: 5em;
+    border: 0.1em solid #0287bf;
+    border-top-right-radius: 5em;
+    border-bottom-right-radius: 5em;
+    -webkit-appearance: none;
+}
+
+.mensaje_error{
+    color: red;
+    font-weight: bold;
+}
+
+.btn-form{
+    color: white;
+    background-color: #21abab;
+    border: none;
+}
+.btn-form:hover{
+    color: white;
+    background-color: #12C987;
+}
+
+.dropdown-toggle::after {
+    color: white;
+}
+.dropdown a{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.dropdown .btn{
+    box-shadow: none;
+}
+.dropdown-item:hover{
+    color:#21abab;
+}
+.dropdown img{
+    width: 3em;
+    border-radius: 0.5em;
+    border: 0.1em solid white;
+}
+.dropdown-menu-center {
+    left: 50%;
+    right: auto;
+    text-align: center;
+    transform: translate(-50%, 0);
+}
+
+/* FORMULARIO */
+.ficha{
+    background-color: white;
+    width: 40em;
+}
+
+.usuarioFile{
+    display: none;
+}
+.botonImagen{
+    background-color: #121d1f;
+    padding: 0.2em;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.mensajeParrafo{
+    padding: 2em;
+    font-size: 1.2em;
+}
+.mensajeVacuna{
+    color: red;
+}
+
+.dropdown-menu{
+    background-color: #21abab;
+}
+
+.marcoImagen{
+    overflow: hidden;
+    width: 7em;
+    height: 7em;
+    position: relative;
+}
+
+.imagenUser{
+    width: 7em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.rolUser{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0em;
+    font-size: 0.7em;
+    margin: auto;
+}
+.listado{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.ordenar_por{
+    background-color: #21abab;
+    color: white;
+    width: 9em;
+}
+.ordenar_por:hover,
+.ordenar_por::selection,
+.ordenar_por:focus
+{
+    background-color: #21abab;
+    color: white;
+}
+
+@media (min-width: 900px){
+    
+    .carousel{
+        height: 30em;
+    }
+}
+@media (max-width: 900px){
+    .listado{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 600px){
+    .listado{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .caja_busqueda{
+        width: 15em;
+    }
+    .texto_busqueda{
+        width: 10em;
+    }
+    .where_busqueda{
+        width: 5em;
+    }
+    .input_vacuna{
+        width: 8em;
+    }
+    .input_usuario{
+        /* width: 5em; */
+    }
+    .ficha{
+        width: 100%;
+    }
+}

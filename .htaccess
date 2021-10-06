@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# Esto calcula la BASE de forma dinámica y la almacena en una variable %{ENV:BASE}
+RewriteCond %{ENV:URI} ^$
+RewriteRule ^(.*)$ - [ENV=URI:$1]
+RewriteCond %{ENV:BASE} ^$
+RewriteCond %{ENV:URI}::%{REQUEST_URI} ^(.*)::(.*?)\1$
+RewriteRule ^ - [ENV=BASE:%2]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ %{ENV:BASE}index.php [QSA,L]

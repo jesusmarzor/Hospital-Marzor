@@ -1,0 +1,98 @@
+{
+    "calendario":{
+        "controller": "CCalendario",
+        "method": "showCalendar"
+    },
+    "verUser":{
+        "controller": "CUsuario",
+        "method": "verUsuario"
+    },
+    "addUser":{
+        "controller": "CUsuario",
+        "method": "addUsuario"
+    },
+    "editUser":{
+        "controller": "CUsuario",
+        "method": "editarUsuario"
+    },
+    "delUser":{
+        "controller": "CUsuario",
+        "method": "borrarUsuario"
+    },
+    "solicitud":{
+        "controller": "CUsuario",
+        "method": "addUsuario"
+    },
+    "solicitudAceptada":{
+        "controller": "CUsuario",
+        "method": "aceptarSolicitud"
+    },
+    "solicitudes":{
+        "controller": "CUsuario",
+        "method": "solicitudes"
+    },
+    "user/list":{
+        "controller": "CUsuario",
+        "method": "list"
+    },
+    "vacunas/list":{
+        "controller": "CVacuna",
+        "method": "list"
+    },
+    "calendario/list":{
+        "controller": "CCalendario",
+        "method": "list"
+    },
+    "verVacunacion":{
+        "controller":"CVacunacion",
+        "method": "verVacunacion"
+    },
+    "addVacunacion":{
+        "controller": "CVacunacion",
+        "method": "addVacunacion"
+    },
+    "editVacunacion":{
+        "controller": "CVacunacion",
+        "method": "editarVacunacion"
+    },
+    "delVacunacion":{
+        "controller": "CVacunacion",
+        "method": "borrarVacunacion"
+    },
+    "vacunacion":{
+        "controller": "CVacunacion",
+        "method": "cartillaVacunacion"
+    },
+    "addVacuna":{
+        "controller": "CVacuna",
+        "method": "addVacuna"
+    },
+    "editVacuna":{
+        "controller": "CVacuna",
+        "method": "editarVacuna"
+    },
+    "delVacuna":{
+        "controller": "CVacuna",
+        "method": "borrarVacuna"
+    },
+    "addCalendario":{
+        "controller": "CCalendario",
+        "method": "addCalendario"
+    },
+    "editCalendario":{
+        "controller": "CCalendario",
+        "method": "editarCalendario"
+    },
+    "delCalendario":{
+        "controller": "CCalendario",
+        "method": "borrarCalendario"
+    },
+    "estadisticas":{
+        "controller": "CVacunacion",
+        "method": "estadisticas"
+    },
+    "log":{
+        "controller": "CLog",
+        "method": "list"
+    }
+}
